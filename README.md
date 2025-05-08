@@ -145,15 +145,16 @@ source ~/.bashrc
 [root@node1 ~]# kubectl get no
 NAME STATUS ROLES AGE VERSION
 node1 Ready control-plane,etcd,master 22d v1.25.12+rke2r1
-node2   Ready control-plane,etcd,master 21d v1.25.12+rke2r1
-node3   Ready control-plane,etcd,master 21d v1.25.12+rke2r1
+
 [root@node1 ~]#
 [root@node1 ~]# kubectl get pod -A
 NAMESPACE NAME READY STATUS RESTARTS AGE
 kube-system etcd-rke2-server-1 1/1 Running 0 2m13s
-kube-system etcd-rke2-server-2 1/1 Running 0 87s
-kube-system etcd-rke2-server-3 1/1 Running 0 56s
+
 》》》》》》》》》
+
+
+
 四、安装 Rancher Helm Chart（仅在node1上执行）
 
 1、安装helm
